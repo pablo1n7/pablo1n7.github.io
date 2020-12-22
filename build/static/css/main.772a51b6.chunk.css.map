@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,KACI,iBAAkB,CAClB,WACF,CACF,QACI,eACJ,CACA,YACI,cACJ","file":"main.772a51b6.chunk.css","sourcesContent":["html {\n    font-family: serif; /* 1 */\n    margin: 4rem;\n  }\n.header{\n    font-size: 10rem;\n}\n.descriptor{\n    font-size: 9rem;\n}"]}
