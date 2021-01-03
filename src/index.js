@@ -5,8 +5,13 @@ import {AppText} from './components/text';
 import {PapersEntry} from './components/papers';
 import {ConferentsEntry} from './components/conferences'
 
+
+let paperRef = React.createRef();
+let conferenceRef = React.createRef();
+let mainRef = React.createRef();
+
 function Paper(props){
-    return  <div class='paper'>
+    return  <div class='paper' ref={paperRef}>
         <div class='title'> {props.title} </div>
         <div class='authors'> {props.autors.toLowerCase()} </div>
         <div class='journal'> {props.journal} </div>
@@ -15,7 +20,7 @@ function Paper(props){
 }
 
 function Conference(props){
-    return  <div class='paper'>
+    return  <div class='paper' ref={conferenceRef} >
         <div class='title'> {props.title} </div>
         <div class='authors'> {props.autors.toLowerCase()} </div>
         <div class='journal'> {props.event} </div>
@@ -62,12 +67,23 @@ function Conferences(){
     </div>;
 }
 
+function conferenceScroll(){
+    window.scrollTo(0, paperRef.current.offsetTop);
+}
+function paperScroll(){
+    window.scrollTo(0, mainRef.current.offsetTop);
+}
+
+function mainScroll(){
+    window.scrollTo(0, mainRef.current.offsetTop);
+}
 
 function Menu(){
     return  <div class='menu'>
-                <div class='menuItem'>Main</div>
-                <div class='menuItem'>Papers</div>
-                <div class='menuItem'>Conferences</div>
+                {/* <div class='menuItem' id='' 
+                onClick={mainScroll}>Main</div> */}
+                <div onClick={paperScroll} class='menuItem'>Papers</div>
+                <div onClick={conferenceScroll} class='menuItem'>Conferences</div>
                 
             </div>;
 }
@@ -80,7 +96,7 @@ function Title() {
 }
 
 function Description(){
-    return  <div class='description'>
+    return  <div class='description' ref={mainRef}>
                 <div>{AppText.description}</div>
             </div>
 }
