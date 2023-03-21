@@ -1,6 +1,13 @@
 
 export const PapersEntry = [
     {
+        journal:'Scientific Reports; Año: 2022 vol. 12',
+        title:'Reconstruction of Iberian ceramic potteries using generative adversarial networks',
+        autors:'NAVARRO, PABLO; CINTAS, CELIA; LUCENA, MANUEL; FUERTES, JOSÉ MANUEL; SEGURA, RAFAEL; DELRIEUX, CLAUDIO; GONZÁLEZ-JOSÉ, ROLANDO',
+        doi:'https://doi.org/10.1038/s41598-022-14910-7',
+        year: 2022,
+    },
+    {
         journal:'American Journal of Human Biology, 2020, vol. 32, no 2, p. e23323.',
         title:'Body shape: Implications in the study of obesity and related traits',
         autors:'NAVARRO, P.; RAMALLO, V.; CINTAS, C.; RUDERMAN, A.; DE AZEVEDO, S.; PASCHETTA, C.; PÉREZ, O.; PAZOS, B.; DELRIEUX, C.; GONZÁLEZ JOSÉ, R.',
